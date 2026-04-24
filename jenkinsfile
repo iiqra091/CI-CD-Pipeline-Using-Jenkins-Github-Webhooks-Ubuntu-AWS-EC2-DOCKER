@@ -44,7 +44,7 @@ pipeline {
                 emailext(
                     subject: "NestJS App Deployed Successfully on EC2!",
                     body: """The Jenkins build for the NestJS application has been completed successfully.
-App URL: http://13.60.27.218:${PORT}/""",
+                    App URL: http://13.60.27.218:${PORT}/""",
                     to: "${EMAIL}"
                 )
             }
