@@ -9,8 +9,8 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo')
-        steps {
+        stage('Clone Repo'){
+            steps {
             git branch: 'main', url: 'https://github.com/iiqra091/CI-CD-Pipeline-Using-Jenkins-Github-Webhooks-Ubuntu-AWS-EC2-DOCKER.git'
         }
     }
